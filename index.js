@@ -103,7 +103,7 @@ function Baby(name, age, favoriteToy) {
   this.name = name;
   this.age = age;
   this.favoriteToy = favoriteToy;
-  Baby.person.prototype.play = function() {
+  Baby.prototype.play = function() {
     return 'playing with ' + this.favoriteToy;
   };
 
