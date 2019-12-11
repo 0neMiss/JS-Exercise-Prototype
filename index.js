@@ -84,9 +84,9 @@ function Car(model, milesPerGallon) {
     this.tank += gallons;
   };
   Car.prototype.drive = function(distance) {
-
     this.odometer += distance;
-    this.tank -=    distance / this.milesPerGallon;
+    this.tank -=  distance;
+
   };
 
 
@@ -109,15 +109,15 @@ function Baby(name, age, favoriteToy) {
   };
 
 }
-
+Baby.prototype = Object.create(Person.prototype);
 /*
   TASK 4
 
   In your own words explain the four principles for the "this" keyword below:
-  1.
-  2.
-  3.
-  4.
+  1.Allows you to create objects with functions
+  2.Allows you to manipulate the scope.
+  3.Allows you to make functions evaluate on the things being passed through them after the fact.
+  4.Helps clone attribues from other classes to create subclassing.
 */
 
 
