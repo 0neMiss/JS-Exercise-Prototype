@@ -100,6 +100,7 @@ function Car(model, milesPerGallon) {
         + Should return a string "Playing with x", x being the favorite toy.
 */
 function Baby(name, age, favoriteToy) {
+  Person.call(this);
   this.name = name;
   this.age = age;
   this.favoriteToy = favoriteToy;
